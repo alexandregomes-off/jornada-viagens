@@ -40,3 +40,18 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  color: var(--text-primary-color);
+  text-align: center;
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secundary-color);
+  border: none;
+  margin: 16px auto 32px auto;
+}
