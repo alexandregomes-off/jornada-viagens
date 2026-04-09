@@ -26,10 +26,6 @@
   height: 220px;
 }
 
-.categories.pacotes-nacionais img {
-  padding-top: 17px;
-}
-
 .categories.transfer img {
   padding-top: 41px;
 }
@@ -47,6 +43,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  article.card.categories {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   article.card.categories {
     width: 282px;
   }
