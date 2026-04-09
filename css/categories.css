@@ -1,0 +1,39 @@
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--background-secundary-color);
+}
+
+#title-categories h2 {
+    padding-top: 88px;
+    margin: 0;
+}
+
+.categories-cards header h3 {
+  color: var(--text-primary-color);
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  padding: 24px 0 0 0;
+  margin: 0;
+}
+
+.card.categories {
+  height: 220px;
+}
+
+.categories.pacotes-nacionais img {
+    padding-top: 17px;
+}
+
+.categories.transfer img {
+    padding-top: 41px;
+}
+
+.categories.seguro-viagem img {
+    padding-top: 17px;
+}
