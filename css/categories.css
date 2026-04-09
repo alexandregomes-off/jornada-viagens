@@ -1,40 +1,46 @@
+.categories .section-title {
+  width: 312px;
+  margin: 0 auto;
+}
+
 .categories-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin-top: 64px;
 }
 
-.card {
+.categories-cards a.card {
+  width: 312px;
+  height: 220px;
   background-color: var(--background-secundary-color);
-}
-
-#title-categories h2 {
-  padding-top: 88px;
-  margin: 0;
-}
-
-.categories-cards header h3 {
+  text-align: center;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  text-decoration: none;
   color: var(--text-primary-color);
+}
+
+.categories-cards .card h3 {
   font-size: 28px;
   font-weight: var(--titles-weight);
-  padding: 24px 0 0 0;
-  margin: 0;
 }
 
-.card.categories {
-  height: 220px;
+.categories-cards .card.single-line {
+  padding-top: 50px;
 }
 
-.categories.transfer img {
-  padding-top: 41px;
+.categories-cards .card.single-line.transfer img {
+  margin: 10px 0 20px;
 }
 
-.categories.seguro-viagem img {
-  padding-top: 17px;
-}
+@media screen and (min-width: 768px) {
+  .categories .section-title {
+    width: 100%;
+  }
 
-@media screen and (min-width: 728px) {
   .categories-cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,14 +48,14 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  article.card.categories {
-    width: 335px;
+  @media screen and (min-width: 1024px) {
+    .categories-cards a.card {
+      width: 475px;
+    }
   }
-}
 
 @media screen and (min-width: 1440px) {
-  article.card.categories {
-    width: 282px;
+  .categories-cards a.card {
+    width: 280px;
   }
 }
