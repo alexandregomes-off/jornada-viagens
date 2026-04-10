@@ -12,10 +12,12 @@
 .destinations .item.tokyo .img-item {
   background: url(../img/tokyo-mobile.jpg);
   background-size: cover;
+  border-radius: 16px;
 }
 .destinations .item.osaka .img-item {
   background: url(../img/osaka-mobile.jpg);
   background-size: cover;
+  border-radius: 16px;
 }
 
 .destinations .item header h3 {
