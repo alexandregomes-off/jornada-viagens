@@ -1,7 +1,57 @@
+.destinations {
+  padding: 0 24px;
+}
+
 .destinations .item header {
   background-color: transparent;
   display: block;
   position: static;
   padding: 0;
   margin-bottom: 24px;
+}
+
+.img-item {
+  display: flex;
+  justify-content: center;
+  width: 312px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.img-item .img-tablet-desk {
+  display: none;
+}
+
+.item h4 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+}
+
+.item p {
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: var(--text-weight);
+}
+
+.item .button {
+  display: flex;
+  justify-content: center;
+  width: 312px;
+  margin: 24px auto 40px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .img-item .img-mobile {
+    display: none;
+  }
+
+  .img-item .img-tablet-desk {
+    max-width: 648px;
+    width: 648px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
