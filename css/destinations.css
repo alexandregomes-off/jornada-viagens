@@ -17,9 +17,14 @@
   height: 360px;
   margin: 0 auto;
 }
+.tokyo {
+  background-image: url(../img/tokyo-mobile.png);
+  background-repeat: no-repeat;
+}
 
-.img-item .img-tablet-desk {
-  display: none;
+.osaka {
+  background-image: url(../img/osaka-mobile.png);
+  background-repeat: no-repeat;
 }
 
 .item h4 {
@@ -43,15 +48,50 @@
 }
 
 @media screen and (min-width: 768px) {
-  .img-item .img-mobile {
-    display: none;
+  .destinations {
+    padding: 0 60px;
+  }
+  .img-item {
+    width: 648px;
+    height: 452px;
   }
 
-  .img-item .img-tablet-desk {
-    max-width: 648px;
-    width: 648px;
+  .tokyo {
+    background-image: url(../img/tokyo-tablet-desk.png);
+  }
+
+  .osaka {
+    background-image: url(../img/osaka-tablet-desk.png);
+  }
+
+  .item .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Cria um espaçamento entre os cards sem precisar de margin */
+    flex-wrap: wrap; /* Se a tela for pequena, o segundo card pula para baixo */
+  }
+
+  .img-item {
+    width: 588px;
+    height: 452px;
+    margin: 0;
+  }
+
+  .item p {
+    width: 588px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+  }
+
+  .item .button {
+    width: 280px;
+    margin: 24px 0 0 0;
+    border-radius: 8px;
   }
 }
