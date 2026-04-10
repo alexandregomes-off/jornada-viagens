@@ -1,97 +1,68 @@
-.destinations {
-  padding: 0 24px;
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-.destinations .item header {
-  background-color: transparent;
-  display: block;
-  position: static;
-  padding: 0;
+.destinations .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+.destinations .item.tokyo .img-item {
+  background: url(../img/tokyo-mobile.jpg);
+  background-size: cover;
+}
+.destinations .item.osaka .img-item {
+  background: url(../img/osaka-mobile.jpg);
+  background-size: cover;
+}
+
+.destinations .item header h3 {
+  margin: 24px 0;
+}
+.destinations .item p {
   margin-bottom: 24px;
 }
-
-.img-item {
-  display: flex;
-  justify-content: center;
-  width: 312px;
-  height: 360px;
-  margin: 0 auto;
-}
-.tokyo {
-  background-image: url(../img/tokyo-mobile.png);
-  background-repeat: no-repeat;
-}
-
-.osaka {
-  background-image: url(../img/osaka-mobile.png);
-  background-repeat: no-repeat;
-}
-
-.item h4 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-size: 28px;
-  font-weight: var(--titles-weight);
-}
-
-.item p {
-  line-height: 32px;
-  font-size: 20px;
-  font-weight: var(--text-weight);
-}
-
-.item .button {
-  display: flex;
-  justify-content: center;
-  width: 312px;
-  margin: 24px auto 40px auto;
+.destinations .button {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .destinations {
-    padding: 0 60px;
-  }
-  .img-item {
     width: 648px;
+  }
+  .destinations .item .img-item {
+    width: 100%;
     height: 452px;
   }
-
-  .tokyo {
-    background-image: url(../img/tokyo-tablet-desk.png);
+  .destinations .item.tokyo .img-item {
+    background: url(../img/tokyo-tablet-desk.jpg);
+    background-size: cover;
   }
-
-  .osaka {
-    background-image: url(../img/osaka-tablet-desk.png);
+  .destinations .item.osaka .img-item {
+    background: url(../img/osaka-tablet-desk.jpg);
+    background-size: cover;
   }
-
-  .item .button {
+  .destinations .button {
     width: 280px;
   }
 }
-
-@media screen and (min-width: 1440px) {
-  .destinations-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px; /* Cria um espaçamento entre os cards sem precisar de margin */
-    flex-wrap: wrap; /* Se a tela for pequena, o segundo card pula para baixo */
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 900px;
   }
 
-  .img-item {
-    width: 588px;
+  .destinations .item .img-item {
+    width: 100%;
     height: 452px;
-    margin: 0;
   }
-
-  .item p {
-    width: 588px;
-    height: auto;
+}
+@media screen and (min-width: 1440px) {
+  .destinations {
+    width: 1200px;
   }
-
-  .item .button {
-    width: 280px;
-    margin: 24px 0 0 0;
-    border-radius: 8px;
+  .destination-items {
+    flex-direction: row;
   }
 }
