@@ -1,0 +1,110 @@
+.payments .image-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 144px 144px;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.payments .image-content .image.bag {
+  background-image: url(../img/gallery1-mobile.png);
+  background-size: cover;
+  border-radius: 16px;
+  width: 144px;
+  height: 254px;
+}
+
+.payments .image-content .image.passport {
+  background-image: url(../img/gallery2-mobile.png);
+  background-size: cover;
+  border-radius: 16px;
+  width: 144px;
+  height: 254px;
+}
+
+.payments .image-content .image.people {
+  background-image: url(../img/gallery3-mobile.png);
+  background-size: cover;
+  border-radius: 16px;
+  width: 312px;
+  height: 182px;
+}
+
+@media screen and (min-width: 758px) {
+  .payments .image-content {
+    grid-template-columns: 312px 312px;
+  }
+
+  .payments .image-content .image.bag {
+    background-image: url(../img/gallery1-tablet.png);
+    width: 312px;
+  }
+
+  .payments .image-content .image.passport {
+    background-image: url(../img/gallery2-tablet.png);
+    width: 312px;
+  }
+
+  .payments .image-content .image.people {
+    background-image: url(../img/gallery3-tablet.png);
+    width: 648px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .payments-content {
+    display: grid;
+    grid-template-columns: repeat(3, 230px 1fr 1fr);
+    justify-items: center;
+    gap: 24px;
+    grid-template-rows: 2;
+    grid-template-areas:
+      "titulo foto-bag foto-pass"
+      "texto  foto-ponte foto-ponte";
+  }
+
+  .payments .image-content {
+    display: contents;
+  }
+
+  .content-title {
+    grid-area: titulo;
+  }
+  .content-text {
+    grid-area: texto;
+  }
+  .bag {
+    grid-area: foto-bag;
+  }
+  .passport {
+    grid-area: foto-pass;
+  }
+  .people {
+    grid-area: foto-ponte;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments-content {
+    grid-template-columns: repeat(3, 384px 384px 384px);
+  }
+
+  .payments .image-content {
+    grid-template-columns: 384px 384px;
+  }
+
+  .payments .image-content .image.bag {
+    background-image: url(../img/gallery1-tablet.png);
+    width: 384px;
+  }
+
+  .payments .image-content .image.passport {
+    background-image: url(../img/gallery2-tablet.png);
+    width: 384px;
+  }
+
+  .payments .image-content .image.people {
+    background-image: url(../img/gallery3-tablet.png);
+    width: 790px;
+  }
+}
