@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 1440px) {
   .payments-content {
-    grid-template-columns: repeat(1, 384px 384px 384px);
+    grid-template-columns: repeat(3, 384px);
   }
 
   .payments .image-content {
