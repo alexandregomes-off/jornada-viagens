@@ -1,31 +1,86 @@
 .hero-footer .img-hero-footer {
-    background: url(../img/bg-bottom-hero-mobile.png);
-    background-size: cover;
-    max-width: 100vw;
-    width: 100%;
-    height: 400px;
+  background: url(../img/bg-bottom-hero-mobile.png);
+  background-size: cover;
+  max-width: 100vw;
+  width: 100%;
+  height: 400px;
 }
 
 .footer {
-    background-color: black;
-    height: 348px;
-    padding: 32px 24px 32px 24px;
+  display: flex;
+  background-color: black;
+  width: auto;
+  height: auto;
+  color: white;
+  font-weight: var(--text-weight);
+  line-height: 28px;
+  text-align: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.footer .detalhes {
+  padding: 32px 24px 32px 24px;
 }
 
 .footer .detalhes .sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .detalhes .sobre img {
-
+  margin-bottom: 16px;
 }
 
-.footer .detalhes p {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 16px;
+.footer .detalhes .sobre p {
+  margin-bottom: 8px;
+}
+
+.footer .detalhes .redes-sociais {
+  margin-top: 32px;
+}
+
+.footer .detalhes .redes-sociais p {
+  margin-bottom: 16px;
+}
+
+.footer .detalhes .redes-sociais .imagens-sociais {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-footer .img-hero-footer {
+    background: url(../img/bg-bottom-hero-tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  .footer {
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .footer .detalhes {
+    padding: 32px 60px 32px 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-footer .img-hero-footer {
+    background: url(../img/bg-bottom-hero-desktop.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .detalhes {
+    padding: 32px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
