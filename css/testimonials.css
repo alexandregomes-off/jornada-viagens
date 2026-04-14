@@ -18,6 +18,8 @@
 .testimonials-container article footer img {
     width: 86px;
     height: 86px;
+    margin-right: 24px;
+    align-items: center;
 }
 
 .testimonials-container article footer h4 {
@@ -30,10 +32,16 @@
 .testimonials-container article footer .star {
     width: 32px;
     height: 32px;
+    margin: 0;
 }
 
 @media screen and (min-width: 1440px) {
   .testimonials-container {
     flex-direction: row;
   }
+
+  .testimonials-container article header {
+    flex: 1;
+    max-width: 1200px;
+}
 }
