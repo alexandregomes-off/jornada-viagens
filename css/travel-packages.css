@@ -30,47 +30,66 @@
 
 /* PAYMENTS */
 .travel-packages-content .payments .payments-content .content-title {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .travel-packages-content .payments .payments-content .aux-content-title {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .travel-packages-content .payments .payments-content .image-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    "japan-1 japan-2",
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  grid-template-areas:
+    "japan-1 japan-2"
     "japan-3 japan-3";
 }
 
-.travel-packages-content .payments .payments-content .image-content .image.japan-1 {
-    background: url(../img/travel-packages/gallery1-mobile.png) no-repeat;
-    background-size: cover;
-    height: 254px;
+.travel-packages-content
+  .payments
+  .payments-content
+  .image-content
+  .image.japan-1 {
+  grid-area: japan-1;
+  background: url(../img/travel-packages/gallery1-mobile.png) no-repeat;
+  background-size: cover;
+  height: 254px;
+  border-radius: 16px;
 }
 
-.travel-packages-content .payments .payments-content .image-content .image.japan-2 {
-    background: url(../img/travel-packages/gallery2-mobile.png) no-repeat;
-    background-size: cover;
-    height: 254px;
+.travel-packages-content
+  .payments
+  .payments-content
+  .image-content
+  .image.japan-2 {
+  grid-area: japan-2;
+  background: url(../img/travel-packages/gallery2-mobile.png) no-repeat;
+  background-size: cover;
+  height: 254px;
+  border-radius: 16px;
 }
 
-.travel-packages-content .payments .payments-content .image-content .image.japan-3 {
-    background: url(../img/travel-packages/gallery3-mobile.png) no-repeat;
-    background-size: cover;
-    height: 182px;
+.travel-packages-content
+  .payments
+  .payments-content
+  .image-content
+  .image.japan-3 {
+  grid-area: japan-3;
+  background: url(../img/travel-packages/gallery3-mobile.png) no-repeat;
+  background-size: cover;
+  height: 182px;
+  border-radius: 16px;
 }
 
 @media screen and (min-width: 728px) {
-/* HEADER */
+  /* HEADER */
   .travel-packages {
     background: url(../img/travel-packages/japan-bg-hero-tablet.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 620px;
+    border-radius: 16px;
   }
 
   .travel-packages .section-title {
@@ -85,10 +104,9 @@
 }
 /* PAYMENTS */
 
-
 @media screen and (min-width: 1440px) {
-/* HEADER */
-    .travel-packages {
+  /* HEADER */
+  .travel-packages {
     background: url(../img/travel-packages/japan-bg-hero-desktop.png) no-repeat;
   }
 
@@ -98,4 +116,3 @@
   }
 }
 /* PAYMENTS */
-
