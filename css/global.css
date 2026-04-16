@@ -50,7 +50,8 @@ section {
 
 section.hero,
 section.bottom-hero,
-section.hero-blog {
+section.hero-blog,
+section.hero-contato {
   width: 100%;
   margin: 0;
 }
