@@ -61,9 +61,12 @@
 @media screen and (min-width: 1440px) {
   .blog-content .hero-blog .hero-img {
     background: url(../img/blog/hero-blog-desktop.png);
+<<<<<<< HEAD
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+=======
+>>>>>>> c34b2050557e8a11cc61f62fb1d1655e034273e9
   }
 
   .blog-content .hero-blog .hero-text {
