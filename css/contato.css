@@ -1,0 +1,146 @@
+.contato-conteudo .hero-contato .contato-img {
+  box-sizing: border-box;
+  background: url(../img/contato/hero-contato-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 460px;
+  padding: 40px 0;
+  margin-bottom: 100px;
+}
+
+.contato-conteudo .hero-contato .contato-text {
+  color: var(--text-secondary-color);
+  box-sizing: border-box;
+  width: auto;
+  height: 378px;
+  padding: 0px 24px;
+  margin: 0;
+}
+
+.contato-conteudo .hero-contato .contato-text hr {
+  margin: 16px auto 32px 0;
+}
+
+.contato-conteudo .hero-contato .contato-text h1 {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: var(--title-weight);
+}
+
+.contato-conteudo .hero-contato .contato-text p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: var(--text-weight);
+}
+
+.contato-conteudo .form-content .section-title .content-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contato-conteudo .form-content .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contato-conteudo .form-content .form .linha {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+  margin: 8px 0 0 0;
+  height: 3px;
+}
+
+label {
+  color: #8c8c8c;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+textarea {
+  outline: none;
+  width: 100%;
+  height: 130px;
+  border-color: #d9d9d9;
+  border-radius: 2px;
+  border-width: 4px;
+}
+
+@media screen and (min-width: 728px) {
+  .contato-conteudo .hero-contato .contato-img {
+    background: url(../img/contato/hero-contato-tablet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+  }
+
+  .contato-conteudo .hero-contato .contato-text h1 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: var(--title-weight);
+  }
+
+  .contato-conteudo .hero-contato .contato-text p {
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .contato-conteudo .hero-contato .contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px auto;
+    width: 579px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contato-conteudo .hero-contato .contato-text {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contato-conteudo .hero-contato .contato-img {
+    background: url(../img/contato/hero-contato-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .contato-conteudo .hero-contato .contato-text {
+    margin: 100px 0 0 120px;
+    width: 579px;
+    padding: 0;
+  }
+
+  .contato-conteudo .form-content .form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+
+  input {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+  .width100 {
+    width: 100%;
+  }
+
+  .width50 {
+    width: 568px;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}
