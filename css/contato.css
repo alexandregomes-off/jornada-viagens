@@ -36,29 +36,40 @@
 }
 
 .contato-conteudo .form-content .section-title .content-text {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 .contato-conteudo .form-content .form form {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
-.contato-conteudo .form-content .form hr {
-    color: rgb(140, 140, 140, 1.0);
+.contato-conteudo .form-content .form .linha {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+  margin: 8px 0 0 0;
+  height: 3px;
+}
+
+label {
+  color: #8c8c8c;
 }
 
 input {
-    border: 3px;
-    outline: none;
-    width: 312px;
+  border: none;
+  outline: none;
+  width: 70%;
 }
 
 textarea {
-    border: none;
-    outline: none;
+  outline: none;
+  width: 100%;
+  height: 130px;
+  border-color: #d9d9d9;
+  border-radius: 2px;
+  border-width: 4px;
 }
 
 @media screen and (min-width: 728px) {
@@ -106,6 +117,30 @@ textarea {
     margin: 100px 0 0 120px;
     width: 579px;
     padding: 0;
+  }
+
+  .contato-conteudo .form-content .form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+
+  input {
+  border: none;
+  outline: none;
+  width: 80%;
 }
 
+  .width100 {
+    width: 100%;
+  }
+
+  .width50 {
+    width: 568px;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
 }
